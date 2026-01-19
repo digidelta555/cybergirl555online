@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<!sneaker>
+<head>
+<title>cYbR_P0RtAL_555</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<style>
+  body {
+  background-image: url('refract.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  text-align: end;
+  color:#161e1b;
+  margin-top: 100px;
+  margin-bottom: 100px:
+  height: 110%;
+
+}
+a:visited {
+    color:#161e1b;
+    background-color:#161e1b;
+    text-decoration: overline;
+}
+a:hover, a:active {
+  background-color:#cfb6fa;
+}
+.dpDiv{
+  background-color:#161e1b52;
+  color:#cebafa;
+  text-align: justify;
+}
+.wrDiv{
+  background-color:#e7eeeb82;
+  color:#B30424;
+  text-align: center;
+  font-size: 22px;
+  overflow: hidden;
+}
+.juDiv{
+  text-align: justify;
+}
+.riDiv{
+  text-align: end;
+}
+.cyDiv{
+  text-align: end;
+  font-size:11px;
+}
+  .container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: 100%;
+  background-color: #161e1b30;
+  overflow: auto;
+  animation-play-state: paused;
+}
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+ .navbar a:hover {
+  background-color: #cfb6fa90;
+  animation-play-state: running;
+}       
+ .active {
+  background-color: #cfb6fa90;
+  animation-play-state: running;
+}      
+ @media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+.blinkies-container {
+  padding: 1px;
+  margin: 20px 0;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden; /* Hide anything outside the container */
+}
+.blinkies-container2 {
+  padding: 1px;
+  margin: 20px 0;
+  border-radius: 5px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden; /* Hide anything outside the container */
+}
+
+.blinkies-track {
+  display: flex;
+  gap: 5px;
+  width: max-content; /* Allow content to expand beyond container */
+  animation: scroll 32s linear infinite;
+  padding: 6px 0;
+}
+
+.blinkies-track:hover {
+  animation-play-state: paused; /* Pause on hover */
+}
+
+.blinkies-track img {
+  height: 30px; /* Uniform height */
+  width: auto;
+  image-rendering: pixelated; /* Keep that retro look */
+  border: 1px solid #e7eeeb50;
+}
+
+/* The scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-93%); /* Move by half the total width */
+  }
+}
+.lfmDiv {
+  background-image: linear-gradient(
+              to bottom,
+              #171615 0%,
+              #000 50%,
+              #171615 65%,
+              #4f4d48 83%,
+              #f6f2c0 100%
+  );
+}
+#music-widget {
+            padding: 15px;
+            max-width: 100%;
+            animation: lfm 2s ease-in-out infinite alternate;
+            text-align: end;
+        }
+        @keyframes lfm {
+  0% {
+    transform: translateX(20);
+  }
+  100% {
+    transform: translateX(-20%); /* Move by half the total width */
+  }
+}
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        
+        .public-content {
+            background: rgba(6, 5, 59, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            border: 2px solid rgba(217, 36, 213, 0.3);
+            box-shadow: 0 0 20px rgba(217, 36, 213, 0.2);
+        }
+        
+        .warning-gif {
+            
+            padding: 5px;
+            border-radius: 3px;
+            transition: all 3s;
+            vertical-align: middle;
+        }
+        
+        .warning-gif:hover {
+            border-color: #e7eeeb;
+            box-shadow: 0 0 15px rgba(255, 0, 69, 0.5);
+            transform: scale(1.05);
+        }
+        
+        .warning-text {
+            color: #ff0045;
+            font-size: 12px;
+            margin-left: 10px;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+        
+      
+        #passwordScreen {
+            display: none; 
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 26, 0.95);
+            z-index: 1000;
+        }
+        
+        .password-box {
+            background: url('vocaloid_192.jpg') center/cover;
+            color: #baeda7;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 0 30px rgba(217, 36, 213, 0.4);
+            position: relative;
+            backdrop-filter: blur(5px);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: #ff0045;
+            font-size: 24px;
+            cursor: pointer;
+            font-family: monospace;
+        }
+        
+        #content {
+            display: none;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        
+        .protected-content {
+            background: url('vocaloid_192.jpg') center;
+            background-size: 100% 100%;
+            color: #e7eeeb;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(217, 36, 213, 0.4);
+            backdrop-filter: blur(5px);
+        }
+        
+        .dl-link {
+            color: #ff0045;
+            font-size: 18px;
+            text-decoration: none;
+            border: 2px solid #ff0045;
+            padding: 15px 30px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 20px 0;
+            background: rgba(6, 5, 59, 0.8);
+            transition: all 0.3s;
+            font-family: monospace;
+        }
+        
+        .dl-link:hover {
+            background: rgba(255, 0, 69, 0.2);
+            box-shadow: 0 0 20px rgba(255, 0, 69, 0.7);
+        }
+        
+        h1, h2 {
+            text-shadow: 0 0 10px rgba(186, 237, 167, 0.5);
+            font-family: monospace;
+        }
+
+</style>
+
+
+    <script>
+    
+      for (let i = 0; i < 5000; i++) {
+        console.log("")
+      }
+        console.log("Fuck you Zhora")
+        const apiKey = '4839d2b8e919fe1358ec00680bc4c4fd';
+        const username = 'vaportendencies';
+
+        fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${apiKey}&format=json&limit=1`)
+            .then(response => response.json())
+            .then(data => {
+                const track = data.recenttracks.track[0];
+                const infoElement = document.getElementById('track-info');
+                infoElement.innerHTML = `<strong>${track.name}</strong> by ${track.artist['#text']}`;
+                infoElement.style.fontStyle = 'normal';
+                infoElement.style.color = '#cfb6fa';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('track-info').textContent = 'Could not load track.';
+            });
+
+       
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedPassword = localStorage.getItem('protectedPagePassword');
+            if (savedPassword === 'please') {
+                showContent();
+            }
+        });
+
+        
+        function showPasswordPrompt() {
+            document.getElementById('passwordScreen').style.display = 'flex';
+            document.getElementById('passwordInput').focus();
+            document.getElementById('passwordInput').value = '';
+            document.getElementById('errorMessage').style.display = 'none';
+        }
+
+        
+        function hidePasswordPrompt() {
+            document.getElementById('passwordScreen').style.display = 'none';
+            document.getElementById('passwordInput').value = '';
+            document.getElementById('errorMessage').style.display = 'none';
+        }
+
+        function checkPassword() {
+            const password = document.getElementById('passwordInput').value;
+            const errorElement = document.getElementById('errorMessage');
+            
+            if (password === 'please') {
+                localStorage.setItem('protectedPagePassword', password);
+                hidePasswordPrompt();
+                showContent();
+            } else {
+                errorElement.style.display = 'block';
+                document.getElementById('passwordInput').value = '';
+                document.getElementById('passwordInput').focus();
+            }
+        }
+
+        function showContent() {
+            document.getElementById('content').style.display = 'block';
+            document.getElementById('content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function logout() {
+            localStorage.removeItem('protectedPagePassword');
+            document.getElementById('content').style.display = 'none';
+            document.getElementById('passwordInput').value = '';
+            document.getElementById('errorMessage').style.display = 'none';
+            
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        
+        document.getElementById('passwordInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && document.getElementById('passwordScreen').style.display === 'flex') {
+                hidePasswordPrompt();
+            }
+        });
+
+      
+        document.getElementById('passwordScreen').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hidePasswordPrompt();
+            }
+        });
+</script>
+</head>
+  <body>
+    <header>
+     <div class="riDiv">
+      <div class="container2">
+       <img src="logo.png" width="150px">
+       <h1 style="color:#e7eeeb;">cYbR_P0RtAL_555</h1>
+      </div>
+      </div>
+      <div class="wrDiv">
+           <p> zhora is litening to:</p>
+      <div class="lfmDiv">
+        <div id="music-widget">
+          <p id="track-info">Loading track...</p>
+        </div>
+      </div>
+    </div>
+      <div class="navbar">
+    <a class="active" href="https://cybergirl555.online"><i class="fa fa-fw fa-home"></i><img src="cdspin.gif" width="30px" title="home">home</a>
+    <a href="https://cybergirl555.online/blog/blog"><i class="fa fa-fw fa-blog"></i><img src="mp3spin.gif" width="30px" title="blog">blog</a>
+    <a href="https://cybergirl555.online/poetry/poetry"><i class="fa fa-fw fa-poetry"></i><img src="tape2.gif" width="30px" title="poetry">poetry</a>
+    <a href="https://cybergirl555.online/blog/music/musicindex"><i class="fa fa-fw fa-blog"></i><img src="vinylspin.gif" width="30px" title="music reviews">music reviews</a>
+    <a href="https://cybergirl555.online/findme"><i class="fa fa-fw fa-findme"></i><img src="flipspin.gif" width="30px" title="contact">find me</a>
+    </div>
+      <img src="https://cybergirl555.online/icons/divide.gif" width="100%">
+    </header>
+          <div class="blinkies-container2">
+      <div class="blinkies-track">
+    <a href="#"><img src="https://cybergirl555.online/icons/blm.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/miku.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/tranny.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/nyan.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/supah.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/amongosue.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/emoti.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/cd3.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/3.gif" alt="blinkie"></a>
+    <a href="https://rateyourmusic.com/artist/deftones"><img src="https://cybergirl555.online/icons/deftones.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/missin.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/music.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/branfog.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/angel.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/panchiko.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/davinky.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/lesbo.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/monster2.gif" alt="blinkie"></a>
+        <a href="#"><img src="https://cybergirl555.online/icons/blm.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/miku.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/tranny.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/nyan.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/supah.gif" alt="blinkie"></a>
+        <a href="#"><img src="https://cybergirl555.online/icons/amongosue.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/emoti.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/cd3.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/3.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/deftones.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/missin.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/music.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/branfog.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/angel.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/panchiko.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/davinky.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/lesbo.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/monster2.gif" alt="blinkie"></a>
+
+    </div>
+</div>
+                    <div class="blinkies-container">
+      <div class="blinkies-track">
+        <a href="#"><img src="https://cybergirl555.online/icons/gecgecgec.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/monster3.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/damn.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/doors.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/hk.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/citygirl.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/tribaka2.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/amninme.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/oop.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/sotru.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/woof.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/mememe.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/pew.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/screwdriver.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/garflbled.gif" alt="blinkie"></a>
+    <a href="https://cybergirl555.online/svov333.html"><img src="https://cybergirl555.online/icons/miku5.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/poetry.gif" alt="blinkie"></a>
+            <a href="#"><img src="https://cybergirl555.online/icons/gecgecgec.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/monster3.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/damn.gif" alt="blinkie"></a>
+    <a href="https://rateyourmusic.com/release/album/the-doors/strange-days-17/"><img src="https://cybergirl555.online/icons/doors.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/hk.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/citygirl.gif" alt="blinkie"></a>
+    <a href="#https://vocadb.net/S/3371"><img src="https://cybergirl555.online/icons/tribaka2.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/amninme.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/oop.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/sotru.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/woof.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/mememe.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/pew.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/screwdriver.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/garflbled.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/miku5.gif" alt="blinkie"></a>
+    <a href="#"><img src="https://cybergirl555.online/icons/poetry.gif" alt="blinkie"></a>
+
+    </div>
+</div>
+
+
+            <div class="dpDiv">
+        <p>welcome 2 Zhora's 555th cYbR_P0RtAL. This portal allows access to liminality concerning sound, queerness, cyberpunk, & others.</p>
+        </div>
+
+    <div id="passwordScreen">
+        <div class="password-box">
+            <button class="close-btn" onclick="hidePasswordPrompt()">×</button>
+            <div style="font-size: 48px; text-align: center; color: #ff0045;">RESTRICTED</div>
+            <h2 style="text-align: center; color: #baeda7;">OBSDN_888_CONTAMINATED_AREA</h2>
+            <p style="text-align: center; color: #baeda7;">ENTER CLARENCE KEY:</p>
+            
+            <input type="password" id="passwordInput" placeholder="SEC_KEY" 
+                   style="width: 100%; padding: 12px; margin: 20px 0; border: 2px solid #d924d5; 
+                          border-radius: 5px; font-size: 16px; box-sizing: border-box; 
+                          background: rgba(6, 5, 59, 0.8); color: #e7eeeb; font-family: monospace;">
+            
+            <button onclick="checkPassword()" 
+                    style="background: #06053b; color: #e7eeeb; border: 2px solid #d924d5; 
+                           padding: 12px 30px; border-radius: 5px; font-size: 16px; 
+                           cursor: pointer; width: 100%; font-family: monospace;
+                           transition: all 0.3s;">
+                [ ENTER_SECURITY_KEY ]
+            </button>
+            
+            <div id="errorMessage" 
+                 style="color: #ff0045; margin-top: 10px; display: none; 
+                        text-align: center; font-family: monospace;">
+                ERR: INCORRECT_INPUT
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="protected-content">
+            <h1 style="color: #ff0045;">VERIFIED BY TRUSTED PATRIOTS</h1>
+            <p style="font-size: 18px; color: #baeda7;">CLARENCE: OBSDN_888</p>
+            <p style="font-size: 14px; color: #baeda7;">ACCESS CONFIRMED</p>
+            
+            <hr style="border-color: #d924d5; margin: 30px 0;">
+            
+            <div style="text-align: center;">
+                <a href="obsidianvst3.zip" class="dl-link" target="_blank" rel="noopener noreferrer">
+                    [ DOWNLOAD_OBSDN_VST ]
+                </a>
+                <a href="obsidian300.zip" class="dl-link" target="_blank" rel="noopener noreferrer">
+                    [ DOWNLOAD_OBSDN_W/O_VST ]
+                </a>
+                <p style="color: #baeda7; font-size: 12px; margin-top: 10px;">
+                    File size: [86KB] | Format: .ZIP 
+                </p>
+              </div>
+            
+            <hr style="border-color: #d924d5; margin: 30px 0;">
+            
+            <button onclick="logout()" 
+                    style="background: #ff0045; color: #e7eeeb; border: none; 
+                           padding: 10px 20px; border-radius: 5px; cursor: pointer; 
+                           margin-top: 20px; font-family: monospace; width: 100%;">
+                [ TERMINATE SESSION ]
+            </button>
+                          <div class="wrDiv">
+                <p>INSTRUCTION FOR SUCCESSFUL CONTAINMENT</p>
+                <ul>
+                  <li>turn off windows antivirus (we'll turn it on again later. it will delete the .exe file otherwise)</li>
+                  <li>unzip and extract</li>
+                  <li>keep compressed folder for backup</li>
+                  <li>cut the folder (but with vst support)</li>
+                  <li>go to C:/program files/synthesizer V studio pro</li>
+                  <li>paste folder</li>
+                  <li> copy .exe & .dll files from the pasted folder</li>
+                  <li>paste them in the same directory as above</li>
+                  <li>run .exe file</li>
+                  <li>click more options</li>
+                  <li>run anyway</li>
+                  <li>do synth V setup and load any voice banks</li>
+                  <li>if vst version open your DAW & confirm the process was successful</li>
+                  <li>whitelist the synth V directory in windows antivirus (and any other antivirus)</li>
+                  <li> restore the windows antivirus to your preferred setting</li>
+                  <li>enjoy</li>
+                </ul>
+            </div>
+
+        </div>
+        
+        
+    </div>
+    <div class="cyDiv">
+      <p>The entity Zhora shall hereby be synonymous with pronouns SHE, THEY, and CY</p>
+    </div>
+    <div class="wrDiv">
+       <p><img src="warningg.gif" 
+                         height="22px" 
+                         width="24px" 
+                         class="warning-gif"
+                         onclick="showPasswordPrompt()"
+                         title="obsidian vst3"> -CAUTION- <img src="warningg.gif"
+       height="22px"
+       width="24px"></p>
+       <p>CAUTION is advised for users without cyber enhancements TRNS_666 or above. this is due to excessive exposure to addictive chemicals and sounds </p> 
+       <p>SEC_PERSONNEL entering restricted areas are advised to check for internal TRNS updates. this can be done by running the EPISODIC_GRANDISER_GLADDEN script in the TRNS UI</p>
+      <p><a href="https://ncmusicon.bandcamp.com" target="_blank" rel="noopener noreferrer">dl TRNS_666 here(my bandcamp)</a></p>
+      <a href="blog/organise.html">How I organise my music and have timed lyrics offline</a>
+      <p>this website is tested on mozilla (floorp, zen), chromium (vivaldi), & webkit (gnome web) for desktop. desktop is the priority. this website is also tested on mobile (vivaldi android, soul) and although best care is taken for compatability there are limits to my ability. I don't own any iOS devices so am unaware of the state of this website. please contact me with screenshots if you experience any issues on iOS devices</p>
+       <p>stuff beyond this point is still being initialised</p>
+      <h2>2_B_iNitiALiSEd</h2>
+       <ul>
+       <li>add cute little images and pfp's to /findme</li>
+       <li>Look into possible intergrations</li>
+       <li>add guestbook</li>
+       <li>add comments page css thing to copy onto all my blogs</li>
+       <li> fix up and beautify everything</li>
+       <li>experiment with flexboxes</li>
+       <li>see if i can get an overlay on my ad style boxes??? idk if that's possible</li>
+       <li>add more easter eggs</li
+       </ul>
+       <a href="https://cybergirl555.online/blog/2025favs.html">
+      <img src="replay.jpg"
+       width= "500px"
+       ></a>
+     </div>
+    <div class="dpDiv">
+      <h2><a href="https://cybergirl555.online/" class="h-card" rel="me">zhora</a></h2>
+        <p class="p-note">i am me. i go by zhora mostly and sometimes <span class="p-nickname">deltana</span>. i am a girl*. i like pretty textures in sound and not so pretty textures in sound. i love lavender but am alergic to it. i like gacha games. i don't like velvet.</p>
+      <h2>Forever_in_aRMs✰✰✰</h2>
+      <a target="_blank" href="https://cybergirl555.online/"><img width="90px" src="https://cybergirl555.online/logoname.png"></a>
+        <textarea><a target="_blank" href="https://cybergirl555.online/"><img src="https://cybergirl555.online/logoname.png"></a></textarea><a href='https://blinkies.cafe' target='_blank'><img src='https://blinkies.cafe/b/display/blinkiesCafe-badge.gif' alt='blinkies.cafe | make your own blinkies!'></a><a href="https://blinkie-net.neocities.org/" taret="_blank"><img src="https://blinkie-net.neocities.org/button2.gif"></a>
+     </div>
+     <div class="dpdiv">
+      <img src="logo.png" width="150px">
+     </div>
+  </body>
+</html>
